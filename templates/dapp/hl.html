@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body >
+<h1>Employee</h1>
+{% if employee %}
+<table border="1"><thead>
+    <th>enmae</th>
+    <th>eno</th>
+    <th>esal</th>
+    </thead>
+    {% for emp in employee %}
+    <tr>
+        <td>{{emp.id}}</td>
+        <td>{{emp.enmae}}</td>
+        <td>{{emp.esal}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+<p>no eml</p>
+{%endif%}
+</body>
+    </html>

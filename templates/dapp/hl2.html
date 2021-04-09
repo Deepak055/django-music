@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="{%static 'css/static1.css' %}">
+</head>
+
+ <div class="container">
+<div class="jumbotron" align="center">
+
+    <h1>{{o|upper}}</h1>
+    <h1>{{p|title}}</h1>
+    <h1>{{q}}</h1>
+ <a class="btn btn-primary btn-lg" href="#" role="button">movie</a>&nbsp &nbsp
+     <a class="btn btn-primary btn-lg" href="#" role="button">politics</a>&nbsp &nbsp
+     <a class="btn btn-primary btn-lg" href="#" role="button">education</a>
+</div></div>
+
+
+<img src='{% static "images/smile.jpg" %}'>
+
+</body>
+</html>
